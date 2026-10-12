@@ -14,7 +14,7 @@
 | Loại sản phẩm | Web cho khách trên điện thoại + web quản lý |
 | Ý tưởng gốc | 1.3 · Menu QR gọi món tại bàn (`ZDOCS/02-KE-HOACH/DANH-SACH-Y-TUONG.md`) |
 | Người phụ trách | |
-| Trạng thái | Mới tạo từ khuôn mẫu |
+| Trạng thái | Có tài liệu nghiệp vụ (SRS, use case, kịch bản demo, kịch bản kiểm thử), chưa code |
 
 ## 2. Vấn đề của khách hàng
 
@@ -43,8 +43,10 @@
 | Area | Chức năng | Màn hình (route FE dự kiến) | Ưu tiên |
 | :--- | :--- | :--- | :---: |
 | `System` | Đăng nhập, tài khoản, vai trò, cài đặt | Có sẵn | — |
+| `Pos` | Tổng quan trong ngày | `/dashboard` | P2 |
 | `Pos` | Menu cho khách qua QR | `/t/[tableCode]` | P1 |
 | `Pos` | Giỏ món, gửi đơn | `/t/[tableCode]/cart` | P1 |
+| `Pos` | Món đã gọi, tạm tính của bàn | `/t/[tableCode]/orders` | P1 |
 | `Pos` | Gọi nhân viên, yêu cầu thanh toán | `/t/[tableCode]` | P1 |
 | `Pos` | Màn hình nhận đơn | `/orders/live` | P1 |
 | `Pos` | Quản lý thực đơn, hết món | `/menu-items` | P1 |
