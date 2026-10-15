@@ -60,6 +60,19 @@
   --sidebar-accent-foreground: #0f172a;
   --sidebar-border: #e2e8f0;
   --sidebar-ring: var(--brand, #2563eb);
+
+  /* Trạng thái nghiệp vụ Menu QR (docs/07 §3.5): chờ lâu, màu thẻ bàn */
+  --wait-warn: #b45309;
+  --wait-warn-soft: #fef3c7;
+  --wait-late: #dc2626;
+  --wait-late-soft: #fee2e2;
+  --table-free: #64748b;
+  --table-busy: #15803d;
+  --table-busy-soft: #dcfce7;
+  --table-pay: #b45309;
+  --table-pay-soft: #fef3c7;
+  --table-off: #94a3b8;
+  --table-off-soft: #f1f5f9;
 }
 
 .dark {
@@ -109,4 +122,30 @@
   --sidebar-accent-foreground: #f1f5f9;
   --sidebar-border: #1e2a42;
   --sidebar-ring: var(--brand-dark, #5182ef);
+
+  --wait-warn: #fbbf24;
+  --wait-warn-soft: #3a2a0a;
+  --wait-late: #f87171;
+  --wait-late-soft: #3b1414;
+  --table-free: #94a3b8;
+  --table-busy: #4ade80;
+  --table-busy-soft: #0f2a1a;
+  --table-pay: #fbbf24;
+  --table-pay-soft: #3a2a0a;
+  --table-off: #64748b;
+  --table-off-soft: #151e30;
+}
+
+@theme inline {
+  --color-wait-warn: var(--wait-warn);
+  --color-wait-warn-soft: var(--wait-warn-soft);
+  --color-wait-late: var(--wait-late);
+  --color-wait-late-soft: var(--wait-late-soft);
+  --color-table-free: var(--table-free);
+  --color-table-busy: var(--table-busy);
+  --color-table-busy-soft: var(--table-busy-soft);
+  --color-table-pay: var(--table-pay);
+  --color-table-pay-soft: var(--table-pay-soft);
+  --color-table-off: var(--table-off);
+  --color-table-off-soft: var(--table-off-soft);
 }

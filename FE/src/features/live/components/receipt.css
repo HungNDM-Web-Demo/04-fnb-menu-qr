@@ -1,0 +1,42 @@
+/*
+ * Bản in khổ 80 mm (07 §2.15): vùng in 72 mm, chữ tối thiểu 12 px, không tràn lề.
+ * Dùng cho phiếu bếp và hóa đơn. Bản in QR (A4) không dùng file này.
+ */
+@page {
+  size: 80mm auto;
+  margin: 4mm;
+}
+
+.receipt {
+  width: 72mm;
+  max-width: 100%;
+  font-size: 12px;
+  line-height: 1.45;
+  color: #000;
+  background: #fff;
+  font-family: var(--font-be-vietnam-pro), ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: 'tnum';
+}
+
+.receipt-sep {
+  border: 0;
+  border-top: 1px dashed #000;
+  margin: 6px 0;
+}
+
+@media print {
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    overflow: visible !important;
+  }
+  .print-hidden {
+    display: none !important;
+  }
+  .receipt {
+    width: 72mm;
+    margin: 0;
+    box-shadow: none;
+  }
+}

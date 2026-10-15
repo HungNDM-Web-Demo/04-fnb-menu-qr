@@ -12,6 +12,7 @@ EnvLoader.Load(builder);
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddApiPresentation(builder.Configuration);
+builder.Services.AddPosRealtime();
 
 var app = builder.Build();
 
@@ -28,5 +29,6 @@ app.UseUploadsStaticFiles();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
+app.MapPosHub();
 
 await app.RunAsync();

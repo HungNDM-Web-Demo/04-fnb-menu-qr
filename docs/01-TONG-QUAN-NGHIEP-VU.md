@@ -13,8 +13,8 @@
 | Ngành / loại khách hàng | Nhà hàng, quán cafe, quán nhậu muốn khách tự gọi món |
 | Loại sản phẩm | Web cho khách trên điện thoại + web quản lý |
 | Ý tưởng gốc | 1.3 · Menu QR gọi món tại bàn (`ZDOCS/02-KE-HOACH/DANH-SACH-Y-TUONG.md`) |
-| Người phụ trách | |
-| Trạng thái | Có tài liệu nghiệp vụ (SRS, use case, kịch bản demo, kịch bản kiểm thử), chưa code |
+| Người phụ trách | Mạnh Hùng (Pum) |
+| Trạng thái | Đã code BE + FE, chạy được cả hai chế độ (dữ liệu mẫu và BE thật trên Postgres) |
 
 ## 2. Vấn đề của khách hàng
 

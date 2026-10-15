@@ -24,8 +24,8 @@ public sealed class MatchesFunctionTests : IAsyncLifetime
     public async Task DisposeAsync() => await _host.DisposeAsync();
 
     [Theory]
-    [InlineData("MINH", "admin")]
-    [InlineData("minh", "admin")]
+    [InlineData("MINH Q", "admin")]
+    [InlineData("minh q", "admin")]
     [InlineData("mAi", "quanly")]
     [InlineData("NHANVIEN@EXAMPLE", "nhanvien")]
     [InlineData("0123456783", "nhanvien")]

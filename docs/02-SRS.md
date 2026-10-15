@@ -110,7 +110,7 @@ flowchart TD
 - Không kiểm tra vị trí khách. Chống đặt bậy bằng xác nhận đơn đầu tiên của phiên, giới hạn số đơn chờ, đổi mã QR khi cần.
 - Không có màn hình bếp. Xác nhận đơn mở bản in phiếu bếp khổ 80 mm qua trình duyệt (giả lập máy in bếp).
 - QR chuyển khoản là ảnh giả lập theo định dạng VietQR; nhân viên tự xác nhận đã nhận tiền.
-- Demo trên máy tính dùng chế độ thiết bị di động của trình duyệt (390×844) hoặc nút "Mở trang khách" ở màn Bàn và QR.
+- Demo trên máy tính dùng chế độ thiết bị di động của trình duyệt (390×844) hoặc nút "Mở trang khách" (màn Bàn và QR, màn hình nhận đơn, trang đăng nhập, thanh công cụ demo). Ở chế độ dữ liệu mẫu, trang khách và màn hình nhận đơn mở ở các tab của cùng một trình duyệt; điện thoại thứ hai cùng bàn là một tab mở bằng "Thêm điện thoại cùng bàn".
 
 ---
 
@@ -345,7 +345,7 @@ stateDiagram-v2
 | NFR-01 | Trang khách tối ưu điện thoại dọc rộng 360–430 px, chạy tốt trên Safari iOS 15 trở lên và Chrome Android 10 trở lên; vùng chạm tối thiểu 44×44 px; nút "Giỏ món", "Gọi nhân viên" luôn nằm trong tầm ngón cái ở cạnh dưới màn hình |
 | NFR-02 | Trang menu tải lần đầu dưới 3 giây trên mạng 4G: ảnh món định dạng WebP không quá 150 KB, tải lười khi cuộn tới |
 | NFR-03 | Đơn và yêu cầu khách gửi hiện trên màn hình nhận đơn trong tối đa 3 giây; kết quả xác nhận, trạng thái yêu cầu, hết món cập nhật trên điện thoại khách trong tối đa 5 giây. Chế độ `api` dùng kênh đẩy thời gian thực hoặc hỏi lại máy chủ mỗi 5 giây; chế độ `mock` đồng bộ giữa các tab cùng trình duyệt |
-| NFR-04 | API công khai cho khách chỉ trả dữ liệu của bàn theo mã bàn, không lộ đơn bàn khác; giới hạn 30 yêu cầu mỗi phút mỗi địa chỉ IP cho gửi đơn và gửi yêu cầu |
+| NFR-04 | API công khai cho khách chỉ trả dữ liệu của bàn theo mã bàn, không lộ đơn bàn khác; giới hạn 30 yêu cầu mỗi phút cho mỗi địa chỉ IP trên mỗi mã bàn khi gửi đơn và gửi yêu cầu (khách cùng wifi quán chung một IP) |
 | NFR-05 | Mã QR in rõ ở kích thước tối thiểu 3×3 cm, mức sửa lỗi M, có viền trắng; quét được bằng camera mặc định của iOS và Android dưới ánh sáng trong quán |
 | NFR-06 | Màn hình nhận đơn tối ưu tablet ngang 1280×800; âm báo có nút bật tắt; không tự đăng xuất trong ca làm |
 | NFR-07 | Dữ liệu mẫu có 90 ngày, đông khách 11:00–13:00 và 18:00–21:00. Tại thời điểm demo luôn có 6–8 bàn đang mở phiên, 2 đơn chờ xác nhận (1 đơn chờ hơn 10 phút), 1 yêu cầu gọi nhân viên chờ hơn 3 phút, 1 món đang hết |

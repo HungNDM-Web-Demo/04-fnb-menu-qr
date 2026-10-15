@@ -11,8 +11,8 @@
 | Môi trường | Chạy cả hai chế độ: dữ liệu mẫu (`mock`) và BE thật (`api`) |
 | Dữ liệu | Đặt lại dữ liệu demo trước mỗi lượt test; test case ghi "Sau TC-xx" thì chạy nối tiếp test case đó |
 | Tài khoản | Nhân viên, Quản lý theo cột "Vai trò", dùng "Đăng nhập nhanh". Khách không đăng nhập, mở trang `/t/{mã bàn}` |
-| Thiết bị | Khách: điện thoại thật hoặc chế độ thiết bị di động 390×844. "Điện thoại B" là một trình duyệt khác hoặc cửa sổ ẩn danh. Nhân viên: cửa sổ 1280×800 |
-| Thời gian thực | Mở trang khách và Màn hình nhận đơn song song; chế độ `mock` dùng hai tab cùng trình duyệt |
+| Thiết bị | Khách: điện thoại thật hoặc chế độ thiết bị di động 390×844. "Điện thoại B": chế độ `api` là một trình duyệt khác hoặc cửa sổ ẩn danh; chế độ `mock` là tab thứ hai cùng trình duyệt mở bằng nút "Thêm điện thoại cùng bàn" (đường dẫn có `?phone=2`), vì cửa sổ ẩn danh không thấy dữ liệu mẫu của trình duyệt chính. Nhân viên: cửa sổ 1280×800 |
+| Thời gian thực | Mở trang khách và Màn hình nhận đơn song song; chế độ `mock` dùng hai tab cùng trình duyệt. Chạy test trong giờ nhận đơn 09:00–22:00 (ngoài giờ thì bấm "Nhận đơn cả ngày" ở thanh công cụ demo, rồi đặt lại dữ liệu sau khi test) |
 | Đạt | Kết quả thực tế khớp toàn bộ cột "Kết quả mong đợi" |
 
 Dữ liệu mẫu dùng trong test:
@@ -111,4 +111,5 @@ Dữ liệu mẫu dùng trong test:
 
 | Ngày | Người test | Chế độ | Số TC đạt / tổng | Lỗi ghi nhận |
 | :--- | :--- | :--- | :---: | :--- |
-| | | | | |
+| 15/10/2026 | Claude (kiểm thử tự động trên trình duyệt) | Dữ liệu mẫu (`mock`) | 3/3 | Chỉ kiểm lại phần đã sửa sau lượt `api`: TC-06 và TC-18 trên trang khách khung rộng (chuyển trang Món đã gọi ↔ menu), gọi món hộ ở 1280×800, TC-43 bước 1. Các TC khác đã đạt ở lượt `mock` trước, không chạy lại |
+| 15/10/2026 | Claude (kiểm thử tự động trên trình duyệt) | BE thật (`api`, Postgres) | 43/43 | Đã sửa: (1) trang khách khung rộng ≥ 768 px treo "Maximum update depth exceeded" khi chuyển trang (ref khung điện thoại đặt state về null); (2) hộp Gọi món hộ tràn phải ở 1280×800, cột "Tổng, Gửi đơn" bị cắt; (3) ngăn kéo phiên đã đóng chuyển khoản hiện "khách đưa — · thối —" vì BE trả `cashReceived: null`; (4) BE nhận từ chối đơn thiếu `reason` thành "Bàn không có khách", nay trả 400 `errors.reason` "Chọn lý do từ chối" như mock (thêm test). Kiểm thêm: SignalR, chuyển bàn, xuất Excel báo cáo, tải PNG QR, 429 `QuaNhieuYeuCau`, đổi mã QR khi khách đang mở trang. TC-39 kiểm qua API (câu lỗi FE hiện nguyên `detail`) |

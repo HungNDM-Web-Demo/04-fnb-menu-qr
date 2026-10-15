@@ -1,6 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Logo">
-  <rect width="64" height="64" rx="14" fill="#2563EB"/>
-  <path d="M18 22.5 32 15l14 7.5-14 7.5-14-7.5Z" fill="#FFFFFF"/>
-  <path d="m18 32 14 7.5L46 32" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>
-  <path d="m18 41.5 14 7.5 14-7.5" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity=".6"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 222 64" role="img" aria-label="Quán Vườn Dừa">
+  <rect width="64" height="64" rx="14" fill="#15803D"/>
+  <path d="M14 55.5Q32 49.5 50 55.5" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+  <path d="M33 24C34.5 34 32 45 26.5 55" fill="none" stroke="#DCFCE7" stroke-width="5" stroke-linecap="round"/>
+  <path d="M30.6 33.5h4.4M29.8 40.5h4.2M28.4 47.5h4" stroke="#15803D" stroke-width="1.2" stroke-linecap="round" opacity=".7"/>
+  <path d="M33 21C41 10.5 53 10.5 59 26C51.5 20 42.5 19.5 33 24.5Z" fill="#FFFFFF"/>
+  <path d="M33 20.5C35.5 8.5 45.5 2.5 56 5C47 10 40 15.5 34.5 23Z" fill="#FFFFFF"/>
+  <path d="M33 20.5C30.5 8.5 20.5 2.5 10 5C19 10 26 15.5 31.5 23Z" fill="#FFFFFF"/>
+  <path d="M33 21C25 10.5 13 10.5 7 26C14.5 20 23.5 19.5 33 24.5Z" fill="#FFFFFF"/>
+  <path d="M35.5 20Q46 15.5 55.5 23M35 19Q42 10.5 51.5 8M31 19Q24 10.5 14.5 8M30.5 20Q20 15.5 10.5 23" fill="none" stroke="#15803D" stroke-width="1" stroke-linecap="round" opacity=".55"/>
+  <circle cx="30" cy="25.5" r="3.3" fill="#FDE68A"/>
+  <circle cx="36.2" cy="25.8" r="3.3" fill="#FCD34D"/>
+  <circle cx="33.1" cy="28.8" r="3" fill="#FBBF24"/>
+  <text x="78" y="43" font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#15803D" letter-spacing="-0.5">Vườn Dừa</text>
 </svg>

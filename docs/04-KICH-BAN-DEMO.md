@@ -8,8 +8,8 @@
 
 - [ ] Mở sẵn link demo, thử "Đăng nhập nhanh" cả 3 vai trò
 - [ ] Đặt lại dữ liệu demo (thanh công cụ demo → Đặt lại dữ liệu) để có 90 ngày số liệu, vài bàn đang ngồi, 2 đơn chờ xác nhận, 1 yêu cầu chờ quá 3 phút
-- [ ] Đổi tên quán, logo, màu theo thương hiệu khách (Cài đặt → Thương hiệu) nếu đã biết: trang menu của khách lấy đúng thông tin này
-- [ ] Chuẩn bị điện thoại thật để quét QR Bàn 05 (`/t/K7M2QX`). Link demo phải mở được từ điện thoại (link online hoặc cùng mạng wifi với máy chạy demo). Không có điện thoại: mở trang khách ở cửa sổ thứ hai, bật chế độ thiết bị di động 390×844
+- [ ] Đổi tên quán (Cài đặt chung → nhóm Quán), logo, màu (nhóm Thương hiệu) theo thương hiệu khách nếu đã biết: trang menu của khách lấy đúng thông tin này
+- [ ] Chuẩn bị điện thoại thật để quét QR Bàn 05 (`/t/K7M2QX`). Link demo phải mở được từ điện thoại (link online hoặc cùng mạng wifi với máy chạy demo). Không có điện thoại: bấm "Mở trang khách" để mở tab thứ hai cùng trình duyệt (bản demo dữ liệu mẫu không dùng được cửa sổ ẩn danh), màn hình rộng sẽ hiện khung điện thoại; người thứ hai cùng bàn là nút "Thêm điện thoại cùng bàn"
 - [ ] Cửa sổ chính đăng nhập `nhanvien` ở Màn hình nhận đơn, bật loa để khách nghe âm báo đơn mới
 - [ ] Ghi nhớ số liệu: Gỏi cuốn tôm thịt 45.000 ₫, Cơm chiên dương châu 65.000 ₫ (Trứng ốp la +10.000 ₫, Lạp xưởng +15.000 ₫), Trà tắc 20.000 ₫ (Size L +5.000 ₫), Bia Sài Gòn Special 22.000 ₫
 

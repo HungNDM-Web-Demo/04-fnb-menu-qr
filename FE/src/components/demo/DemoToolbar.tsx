@@ -7,6 +7,7 @@ import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover
 import { Separator } from '@/components/ui/separator'
 import { appConfig } from '@/config/app.config'
 import { useDemoEnvironment } from '@/features/demo/hooks/use-demo'
+import { GuestAutoSimulator, GuestDemoSection } from '@/features/guest/components/GuestDemoSection'
 import { ResetDataButton, ResetDataDialog } from './ResetDataButton'
 import { RoleSwitcher } from './RoleSwitcher'
 import { ThemePicker } from './ThemePicker'
@@ -75,6 +76,10 @@ function DemoToolbarPanel() {
             <RoleSwitcher onSwitched={() => setOpen(false)} />
           </Section>
           <Separator />
+          <Section title="Trang khách">
+            <GuestDemoSection />
+          </Section>
+          <Separator />
           <Section title="Giao diện">
             <ThemePicker />
           </Section>
@@ -90,6 +95,7 @@ function DemoToolbarPanel() {
         </PopoverContent>
       </Popover>
       <ResetDataDialog open={resetOpen} onOpenChange={setResetOpen} />
+      <GuestAutoSimulator />
     </>
   )
 }
